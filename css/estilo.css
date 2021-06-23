@@ -60,7 +60,7 @@ h2::after {
 
 header {
     background-color: var(--header-bgcolor);
-    background-image: url("http://cdn26.us1.fansshare.com/photo/wallpaper1920x1080/matrix-code-green-rain-wallpaper-by-steel-ghost-1197353440.jpg");
+    background-image: url("../img/matrix-code-green.jpg");
     margin:-1em 0 0.5em 0;
     padding: 0.5em 0.5em 0 0.5em;
     text-align: center;
