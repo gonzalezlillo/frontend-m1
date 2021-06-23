@@ -1,0 +1,273 @@
+:root {
+    --about-bgcolor:#fcefe6;
+    --fondo-degradado:#fcd6a7;
+    --form-bgcolor:#140b00;
+    --header-bgcolor: #000000;
+    --header-h1-color: #FFFFFF;
+    --nav-bgcolor:#2a3a4d;
+    --nav-a-color:#FFFFFF;
+    --nav-a-color-hover:#e2cccc;
+    --summary-color:#6b2c00;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+ 
+/**********************************************************/
+/*                  HTML TAGS                            */
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+footer {
+    color:white;
+    background-color: var(--nav-bgcolor);
+    border:solid 2px var(--header-bgcolor);
+    margin: 0.5em auto 0 auto;
+    padding: 0.7em;
+    text-align: center;
+}
+
+form {
+    margin-left:1.5em;
+}
+
+h1 {
+    background-color: var(--header-bgcolor);
+    color:var(--header-h1-color);
+    display: inline-block;
+    font-family:'Roboto', sans-serif;
+    font-size: 130%;
+    margin:0.8em 0.2em 0.5em 0.2em;
+    padding:0.2em 0.2em;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+h2::before {
+    content: "\003C";
+}
+
+h2::after {
+    content: "\003E";
+}
+
+header {
+    background-color: var(--header-bgcolor);
+    background-image: url("http://cdn26.us1.fansshare.com/photo/wallpaper1920x1080/matrix-code-green-rain-wallpaper-by-steel-ghost-1197353440.jpg");
+    margin:-1em 0 0.5em 0;
+    padding: 0.5em 0.5em 0 0.5em;
+    text-align: center;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom:1em;
+    width: 90%;
+}
+
+label {
+    display: block;
+    margin-bottom:0.4em;
+}
+
+nav {
+    background-color: var(--nav-bgcolor);
+    border:solid 2px var(--header-bgcolor);
+    margin: -0.5em auto 1em auto;
+    padding: 0.2em 0.7em;
+    text-align: left;
+}
+
+nav a {
+    color: var(--nav-a-color);
+    display: block;
+    font-weight: bold;
+    margin:1em 0 1em 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--nav-a-color-hover);
+
+}
+
+summary {
+    color:var(--summary-color);
+    font-weight: bold;
+}
+
+[type="submit"] {
+    background-color: var(--about-bgcolor);
+    font-weight: bold;
+}
+
+
+
+/**********************************************************/
+/*                  CLASSES                              */
+
+.a-caja {
+    bottom:0;
+    color:var(--summary-color);
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.atari {
+    background-color: white;
+    border:var(--nav-bgcolor) 1px solid;
+    float:right;
+    margin: 0 0 0 0.5em;
+    min-width: 150px;
+    max-width: 300px;
+    padding: 0.4em;
+    width: 50%;
+}
+
+.atari figcaption {
+    text-align: center;
+}
+
+.atari img {
+    width: 100%;
+}
+
+.bloque-texto {
+    vertical-align: top;
+}
+
+.boton-form {
+    font-size: 120%;
+    padding: 0.5em;
+    width: inherit;
+}
+
+.caja-en-fila {
+    border:1px solid gray;
+    margin:1em auto;
+    padding:0 1em 1em 1em;
+    width: 90%;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.desc {
+    margin-bottom: 1em;
+}
+
+.h1-subtitulo {
+    font-size: 80%;
+    font-style: italic;
+}
+
+.h1-subtitulo:before {
+    content:"\A";
+    white-space: pre;
+}
+
+.h2-form {
+    font-size: 120%;
+    text-align: center;
+}
+
+.no-salto {
+    white-space: nowrap;
+}
+
+.retrato {
+    border-radius: 50%;
+    float: right;
+    max-width: 300px;
+    min-width: 150px;
+    shape-margin: 1em;
+    shape-outside: circle(50%);
+    width: 50%;
+}
+
+/**********************************************************/
+/*                  ID                                   */
+
+#about {
+    background-color: var(--about-bgcolor);
+    border:1px solid gray;
+    padding:0 1em 1em 1em;
+}
+
+#contacto {
+    color:white;
+    background-color: var(--form-bgcolor);
+    padding:1em 0;
+}
+
+#experiencia {
+    background: linear-gradient(45deg,  var(--fondo-degradado), white);
+}
+
+#proyectos {
+    background: linear-gradient(-45deg,  var(--fondo-degradado), white);
+}
+
+/**********************************************************/
+/*                  Media Queries                        */
+
+@media (min-width: 760px) {
+    h1 {
+        font-size: 130%;
+        padding:0.2em 0.5em;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    nav {
+        padding: 0.8em;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin:0 2em;
+    }
+
+    .h1-subtitulo:before {
+        content:" - ";
+    }
+}
+
+@media (min-width: 1000px) {
+    form {
+        padding:0 20%;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    nav a {
+        margin:0 3em;
+    }
+
+    .caja-en-fila {
+        margin:0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 51% 51%;
+        padding:1em 0;
+    }
+
+}
